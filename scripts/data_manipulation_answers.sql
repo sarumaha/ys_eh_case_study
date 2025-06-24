@@ -62,3 +62,8 @@ GROUP BY "RoleName"
 
 -- Sort alphabetically for easy viewing
 ORDER BY "RoleName";
+
+
+SELECT DISTINCT e."DepartmentName" || '-' || e."RoleName" AS dept_role
+FROM public.employees e;
+
